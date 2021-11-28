@@ -70,9 +70,9 @@ class ChatActivity : AppCompatActivity() {
             val message = messageBox.text.toString()
             val messageObject = MessageModel(message, senderUid)
 
-            database.child("chat").child(senderRoom!!).child("messages").push()
+            database.child("chats").child(senderRoom!!).child("messages").push()
                 .setValue(messageObject).addOnSuccessListener {
-                    database.child("chat").child(receiverUid!!).child("messages").push()
+                    database.child("chats").child(receiverRoom!!).child("messages").push()
                         .setValue(messageObject)
                 }
             messageBox.setText("")

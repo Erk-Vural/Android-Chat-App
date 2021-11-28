@@ -20,7 +20,7 @@ class MessageAdapter(val context: Context, val messageList: ArrayList<MessageMod
             return ReceiveViewHolder(view)
         } else {
             val view: View = LayoutInflater.from(context).inflate(R.layout.sent, parent, false)
-            return ReceiveViewHolder(view)
+            return SentViewHolder(view)
         }
     }
 
@@ -31,7 +31,7 @@ class MessageAdapter(val context: Context, val messageList: ArrayList<MessageMod
             val viewHolder = holder as SentViewHolder
             holder.sentMessage.text = currentMessage.message
 
-        } else if (holder.javaClass == ReceiveViewHolder::class.java) {
+        } else {
             val viewHolder = holder as ReceiveViewHolder
             holder.receiveMessage.text = currentMessage.message
 
@@ -41,10 +41,10 @@ class MessageAdapter(val context: Context, val messageList: ArrayList<MessageMod
     override fun getItemViewType(position: Int): Int {
         val currentMessage = messageList[position]
 
-        return if (FirebaseAuth.getInstance().currentUser?.uid.equals(currentMessage.senderID)) {
-            ITEM_SENT
+         if (FirebaseAuth.getInstance().currentUser?.uid.equals(currentMessage.senderID)) {
+             return ITEM_SENT
         } else {
-            ITEM_RECEIVE
+             return ITEM_RECEIVE
         }
     }
 
