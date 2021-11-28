@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Chat App</string>
+    <string name="email">email</string>
+    <string name="app_logo">app logo</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+    <string name="sign_up">sign_up</string>
+    <string name="name">name</string>
+    <string name="log_out">Log out</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="sendicon">SendIcon</string>
+    <string name="this_is_sent_message">This is sent message</string>
+    <string name="this_is_receive_message">this is receive message</string>
+
+</resources>

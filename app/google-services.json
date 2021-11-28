@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "327960798331",
+    "firebase_url": "https://kotlin-firebase-chatapp-default-rtdb.firebaseio.com",
+    "project_id": "kotlin-firebase-chatapp",
+    "storage_bucket": "kotlin-firebase-chatapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327960798331:android:3711ae747e7aa73b48eede",
+        "android_client_info": {
+          "package_name": "com.kotlinFirebase.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327960798331-vm4d3kimdhi3b24d5dh6rn5pj6eq7g5s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiCSIaYNdzh--lXHDuwcNa4CzOaN5fSqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327960798331-vm4d3kimdhi3b24d5dh6rn5pj6eq7g5s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
